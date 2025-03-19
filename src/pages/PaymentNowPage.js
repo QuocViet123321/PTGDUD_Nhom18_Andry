@@ -12,6 +12,8 @@ import VoucherPopup from "../components/VoucherPopup.js";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { IoArrowBack } from "react-icons/io5";
+import Footer from "../components/Footer.js";
+import axios from "axios";
 
 const hinhThucThanhToanList = [
   {
@@ -39,6 +41,7 @@ function PaymentNowPage() {
   const product = JSON.parse(localStorage.getItem("ProductPayNow")) || {};
   const [voucherList, setVoucherList] = useState([]);
   const [payPro, setPayPro] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     const storedVouchers =
@@ -59,19 +62,49 @@ function PaymentNowPage() {
   }
 
   function handlePayMentNow() {
-    const updatedAccount = {
-      ...account,
-      bell: Array.isArray(account.bell)
-        ? [
-            {
-              id: uuidv4(),
-              info: [
+    // Cập nhật số lượng đã bán
+    axios
+      .get(`http://localhost:3000/product/${product.id}`)
+      .then((response) => {
+        const updatedProduct = {
+          ...response.data,
+          sold: response.data.sold + product.quantity,
+        };
+
+        // Gửi yêu cầu cập nhật sản phẩm
+        axios
+          .put(`http://localhost:3000/product/${product.id}`, updatedProduct)
+          .then(() => {
+            console.log("Cập nhật sold thành công!");
+
+            // Cập nhật đơn hàng cho tài khoản
+            const updatedAccount = {
+              ...account,
+              bell: [
                 {
-                  type: "Đơn hàng",
-                  product: { ...product },
-                  name: "Đặt hàng thành công",
-                  state: "Đang xử lý",
-                  price:
+                  id: uuidv4(),
+                  info: [
+                    {
+                      type: "Đơn hàng",
+                      product: { ...product },
+                      name: "Đặt hàng thành công",
+                      state: "Đang xử lý",
+                      price:
+                        product.price * product.quantity +
+                        37000 -
+                        (product.sale
+                          ? product.price *
+                            (product.sale / 100) *
+                            product.quantity
+                          : 0) -
+                        (product.quantity > 1 ? 37000 : 0) -
+                        totalVoucherValue,
+                      ship: account.addressShip?.find((add) => add.isMacDinh),
+                    },
+                  ],
+                  priceShip: 37000,
+                  priceSaleVoucher: totalVoucherValue,
+                  total:
                     product.price * product.quantity +
                     37000 -
                     (product.sale
@@ -79,76 +112,38 @@ function PaymentNowPage() {
                       : 0) -
                     (product.quantity > 1 ? 37000 : 0) -
                     totalVoucherValue,
-                  ship: account.addressShip?.find((add) => add.isMacDinh),
+                  cancel: false,
+                  addressMD: account.addressShip?.find((add) => add.isMacDinh),
+                  ngayGiaoHang: getDateAfterFourDays(),
+                  ngayDatHang: getDateNow(),
+                  see: false,
                 },
+                ...(Array.isArray(account.bell) ? account.bell : []),
               ],
-              priceSaleShip: product.quantity > 1 ? 37000 : 0,
-              priceShip: 37000,
-              priceSaleVoucher: totalVoucherValue,
-              total:
-                product.price * product.quantity +
-                37000 -
-                (product.sale
-                  ? product.price * (product.sale / 100) * product.quantity
-                  : 0) -
-                (product.quantity > 1 ? 37000 : 0) -
-                totalVoucherValue,
-              cancel: false,
-              addressMD: account.addressShip?.find((add) => add.isMacDinh),
-              ngayGiaoHang: getDateAfterFourDays(),
-              ngayDatHang: getDateNow(),
-              see: false,
-            },
-            ...account.bell,
-          ]
-        : [
-            {
-              id: uuidv4(),
-              info: [
-                {
-                  type: "Đơn hàng",
-                  product: { ...product },
-                  name: "Đặt hàng thành công",
-                  state: "Đang xử lý",
-                  price:
-                    product.price * product.quantity +
-                    37000 -
-                    (product.sale
-                      ? product.price * (product.sale / 100) * product.quantity
-                      : 0) -
-                    (product.quantity > 1 ? 37000 : 0) -
-                    totalVoucherValue,
-                  ship: account.addressShip?.find((add) => add.isMacDinh),
-                },
-              ],
-              priceShip: 37000,
-              priceSaleVoucher: totalVoucherValue,
-              total:
-                product.price * product.quantity +
-                37000 -
-                (product.sale
-                  ? product.price * (product.sale / 100) * product.quantity
-                  : 0) -
-                (product.quantity > 1 ? 37000 : 0) -
-                totalVoucherValue,
-              cancel: false,
-              addressMD: account.addressShip?.find((add) => add.isMacDinh),
-              ngayGiaoHang: getDateAfterFourDays(),
-              ngayDatHang: getDateNow(),
-              see: false,
-            },
-          ],
-    };
-    localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
-    localStorage.setItem(
-      "voucherList",
-      JSON.stringify(
-        voucherList.filter((item) =>
-          myVoucher.find((voucher) => voucher.id !== item.id && !item.select)
-        )
-      )
-    );
-    navigate("/paymentSuccess", { replace: true });
+            };
+            localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
+
+            // Xóa voucher đã sử dụng
+            localStorage.setItem(
+              "voucherList",
+              JSON.stringify(
+                voucherList.filter((item) =>
+                  myVoucher.find(
+                    (voucher) => voucher.id !== item.id && !item.select
+                  )
+                )
+              )
+            );
+
+            navigate("/paymentSuccess", { replace: true });
+          })
+          .catch((error) => {
+            console.error("Lỗi khi cập nhật sold:", error);
+          });
+      })
+      .catch((error) => {
+        console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
+      });
   }
 
   function totalVoucher(priceTotal) {
@@ -185,6 +180,7 @@ function PaymentNowPage() {
         setMyVoucher={setMyVoucher}
         voucherList={voucherList}
         setVoucherList={setVoucherList}
+        totalPrice={totalPrice}
       />
       {/* Header */}
       <div className="flex items-center p-8 bg-white gap-6 shadow-md">
@@ -208,9 +204,9 @@ function PaymentNowPage() {
           </span>
         </div>
         {/* Body */}
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           {/* Chi tiết đơn hàng */}
-          <div className="w-[70%] mx-4">
+          <div className="w-full md:w-[70%] mx-4">
             <div>
               <h1 className="font-bold text-[30px]">Đơn hàng</h1>
               <div>
@@ -271,12 +267,28 @@ function PaymentNowPage() {
                         <h1 className="text-red-500 font-bold">
                           {formatCurrency(
                             (product.price -
-                              product.price * (product.sale / 100)) *
+                              (product.sale
+                                ? product.price * (product.sale / 100)
+                                : 0)) *
                               (product.quantity || 1)
                           )}
                         </h1>
                       </div>
                     </div>
+                  </div>
+                  <div className="mb-4 mt-2 p-3 border-l-4 border-blue-500 bg-blue-50">
+                    <h3 className="text-[30px] font-semibold text-blue-600">
+                      Chính Sách Mua Hàng
+                    </h3>
+                    <ul className="text-[20px] text-gray-700 list-disc pl-5">
+                      <li>Đổi trả trong 7 ngày nếu lỗi nhà sản xuất.</li>
+                      <li>Giao hàng toàn quốc từ 3 - 7 ngày.</li>
+                      <li>
+                        Miễn phí vận chuyển cho đơn hàng có 2 đơn trở lên.
+                      </li>
+                      <li>Hỗ trợ bảo hành chính hãng.</li>
+                      <li>Thanh toán an toàn qua Tiền mặt, ZaloPay, MoMo.</li>
+                    </ul>
                   </div>
                   {/* Phương thức thanh toán */}
                   <div className="bg-white p-3 rounded-md text-[18px] mt-3">
@@ -361,7 +373,10 @@ function PaymentNowPage() {
               </div>
               <div
                 className="p-3 bg-primary w-[190px] text-center font-semibold mx-auto cursor-pointer text-white rounded-md"
-                onClick={() => setVoucherPopup(true)}
+                onClick={() => {
+                  setVoucherPopup(true);
+                  setTotalPrice(product.price * product.quantity);
+                }}
               >
                 Chọn Voucher
               </div>
@@ -444,6 +459,7 @@ function PaymentNowPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

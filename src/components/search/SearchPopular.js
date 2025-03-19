@@ -3,7 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 const searchList = [
   {
     id: 1,
-    name: "Điện thoại giá rẽ",
+    name: "Samsung Galaxy S25",
   },
   {
     id: 2,
@@ -11,15 +11,15 @@ const searchList = [
   },
   {
     id: 3,
-    name: "Tay nghe bluetooth",
+    name: "Apple",
   },
   {
     id: 4,
-    name: "Đồng hồ thông minh",
+    name: "Redmi Note 10",
   },
 ];
 
-function SearchPopular({ setSearch, input }) {
+function SearchPopular({ setSearch, input, handleSearch }) {
   return (
     <div>
       {/* Tippy tìm kiếm*/}
@@ -33,6 +33,7 @@ function SearchPopular({ setSearch, input }) {
                 className="flex p-2 items-center gap-2 hover:bg-gray-200 cursor-pointer "
                 onClick={() => {
                   setSearch(search.name);
+                  handleSearch();
                   input.current.focus();
                 }}
               >

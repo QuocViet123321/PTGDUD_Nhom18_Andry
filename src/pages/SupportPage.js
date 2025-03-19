@@ -38,19 +38,19 @@ function SupportPage() {
         <h2 className="text-2xl font-semibold mb-4">Câu Hỏi Thường Gặp</h2>
         <details className="mb-4 border-b pb-2">
           <summary className="cursor-pointer font-medium">
-            Làm thế nào để đặt vé?
+            Làm thế nào để đổi hàng?
           </summary>
           <p className="text-gray-600 mt-2">
-            Bạn có thể đặt vé trực tuyến trên trang chủ của chúng tôi hoặc liên
+            Bạn có thể đổi trả trực tuyến trên trang chủ của chúng tôi hoặc liên
             hệ hotline.
           </p>
         </details>
         <details className="mb-4 border-b pb-2">
           <summary className="cursor-pointer font-medium">
-            Tôi có thể hủy vé không?
+            Tôi có thể trả góp không?
           </summary>
           <p className="text-gray-600 mt-2">
-            Bạn có thể hủy vé trước 24h so với giờ khởi hành để được hoàn tiền.
+            Bạn có thể trả góp tùy theo chính sách của nhà cung cấp dịch vụ
           </p>
         </details>
       </div>

@@ -10,11 +10,22 @@ function VoucherPopup({
   voucherList,
   setVoucherList,
   setMess,
+  totalPrice,
 }) {
   const chatRef = useRef(null);
-  const [errorMessage, setErrorMessage] = useState(""); // State lưu trữ thông báo lỗi
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // Hàm đóng popup khi click bên ngoài
+  // // Lấy danh sách voucher từ localStorage khi mở popup
+  // useEffect(() => {
+  //   if (voucherPopup) {
+  //     const storedVouchers =
+  //       JSON.parse(localStorage.getItem("voucherList")) || [];
+  //     console.log("Dữ liệu từ localStorage:", storedVouchers); // Debug dữ liệu từ localStorage
+  //     setVoucherList([...storedVouchers]); // Cập nhật state
+  //   }
+  // }, [voucherPopup, setVoucherList]);
+
+  // Đóng popup khi click ra ngoài
   const handleClickOutside = useCallback(
     (event) => {
       if (chatRef.current && !chatRef.current.contains(event.target)) {
@@ -24,7 +35,7 @@ function VoucherPopup({
     [setVoucherPopup]
   );
 
-  // Hàm đóng popup khi nhấn phím ESC
+  // Đóng popup khi nhấn ESC
   const handleKeyDown = useCallback(
     (event) => {
       if (event.key === "Escape") {
@@ -37,18 +48,18 @@ function VoucherPopup({
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [handleClickOutside, handleKeyDown]);
 
+  // Kiểm tra số lượng voucher được chọn
   useEffect(() => {
     if (myVoucher.length > 2) {
       setErrorMessage("Bạn chỉ được chọn tối đa 2 voucher.");
     } else {
-      setErrorMessage(""); // Xóa thông báo nếu số lượng hợp lệ
+      setErrorMessage("");
     }
   }, [myVoucher]);
 
@@ -95,10 +106,11 @@ function VoucherPopup({
 
                 {/* Danh sách voucher */}
                 <div className="mt-4 flex gap-2 max-h-[500px] overflow-y-scroll flex-col items-center">
-                  {voucherList.map(
+                  {(voucherList || []).map(
                     (voucher) =>
                       !voucher.select && (
                         <Voucher
+                          totalPrice={totalPrice}
                           key={voucher.id}
                           datavoucher={voucher}
                           voucherList={voucherList}

@@ -13,6 +13,8 @@ import { useEffect, useState } from "react";
 import Message from "../message/Message.js";
 import { v4 as uuidv4 } from "uuid";
 import { IoArrowBack } from "react-icons/io5";
+import Footer from "../components/Footer.js";
+import axios from "axios";
 
 const hinhThucThanhToanList = [
   {
@@ -41,6 +43,7 @@ function PaymentCartPage() {
   const [voucherList, setVoucherList] = useState([]);
   const [payPro, setPayPro] = useState(1);
   const [mess, setMess] = useState(false);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     const storedVouchers =
@@ -69,51 +72,63 @@ function PaymentCartPage() {
       ), // Xóa sản phẩm đã mua khỏi giỏ hàng
     };
 
-    updatedAccount.bell.unshift({
-      id: uuidv4(),
-      info: product.map((item) => ({
-        type: "Đơn hàng",
-        product: { ...item },
-        name: "Đặt hàng thành công",
-        state: "Đang xử lý",
-        price:
-          (item.price - (item.sale ? item.price * (item.sale / 100) : 0)) *
-          (item.quantity || 1),
-        ship: account.addressShip?.find((add) => add.isMacDinh),
-      })),
-      priceShip: 37000,
-      priceSaleShip:
-        product.length > 1 || product.find((pro) => pro.quantity > 1)
-          ? 37000
-          : 0,
-      priceSaleVoucher: totalVoucher(
-        product.reduce((total, item) => total + item.price * item.quantity, 0) +
-          37000 -
-          product.reduce(
-            (total, item) =>
-              total + (item.sale ? item.price * (item.sale / 100) : 0),
-            0
-          ) -
-          (product.length > 1 || product.find((pro) => pro.quantity > 1)
-            ? 37000
-            : 0)
-      ),
-      total:
-        product.reduce((total, item) => total + item.price * item.quantity, 0) +
-        37000 -
-        product.reduce(
-          (total, item) =>
-            total + (item.sale ? item.price * (item.sale / 100) : 0),
-          0
-        ) -
-        (product.length > 1 || product.find((pro) => pro.quantity > 1)
-          ? 37000
-          : 0) -
-        totalVoucher(
-          product.reduce(
-            (total, item) => total + item.price * item.quantity,
-            0
-          ) +
+    // Cập nhật sold cho từng sản phẩm trong giỏ hàng
+    const updateSoldPromises = product.map((item) =>
+      axios.get(`http://localhost:3000/product/${item.id}`).then((response) => {
+        const updatedProduct = {
+          ...response.data,
+          sold: response.data.sold + (item.quantity || 1),
+        };
+
+        return axios.put(
+          `http://localhost:3000/product/${item.id}`,
+          updatedProduct
+        );
+      })
+    );
+
+    // Đợi tất cả các yêu cầu cập nhật sold hoàn thành trước khi tiếp tục xử lý đơn hàng
+    Promise.all(updateSoldPromises)
+      .then(() => {
+        console.log("Cập nhật sold thành công!");
+
+        updatedAccount.bell.unshift({
+          id: uuidv4(),
+          info: product.map((item) => ({
+            type: "Đơn hàng",
+            product: { ...item },
+            name: "Đặt hàng thành công",
+            state: "Đang xử lý",
+            price:
+              (item.price - (item.sale ? item.price * (item.sale / 100) : 0)) *
+              (item.quantity || 1),
+            ship: account.addressShip?.find((add) => add.isMacDinh),
+          })),
+          priceShip: 37000,
+          priceSaleShip:
+            product.length > 1 || product.find((pro) => pro.quantity > 1)
+              ? 37000
+              : 0,
+          priceSaleVoucher: totalVoucher(
+            product.reduce(
+              (total, item) => total + item.price * item.quantity,
+              0
+            ) +
+              37000 -
+              product.reduce(
+                (total, item) =>
+                  total + (item.sale ? item.price * (item.sale / 100) : 0),
+                0
+              ) -
+              (product.length > 1 || product.find((pro) => pro.quantity > 1)
+                ? 37000
+                : 0)
+          ),
+          total:
+            product.reduce(
+              (total, item) => total + item.price * item.quantity,
+              0
+            ) +
             37000 -
             product.reduce(
               (total, item) =>
@@ -122,34 +137,55 @@ function PaymentCartPage() {
             ) -
             (product.length > 1 || product.find((pro) => pro.quantity > 1)
               ? 37000
-              : 0)
-        ),
-      cancel: false,
-      addressMD: account.addressShip?.find((add) => add.isMacDinh),
-      ngayGiaoHang: getDateAfterFourDays(),
-      ngayDatHang: getDateNow(),
-      see: false,
-      // hinhThucThanhToan: hinhThucThanhToanList.find((item) => item.id === payPro).name
-    });
+              : 0) -
+            totalVoucher(
+              product.reduce(
+                (total, item) => total + item.price * item.quantity,
+                0
+              ) +
+                37000 -
+                product.reduce(
+                  (total, item) =>
+                    total + (item.sale ? item.price * (item.sale / 100) : 0),
+                  0
+                ) -
+                (product.length > 1 || product.find((pro) => pro.quantity > 1)
+                  ? 37000
+                  : 0)
+            ),
+          cancel: false,
+          addressMD: account.addressShip?.find((add) => add.isMacDinh),
+          ngayGiaoHang: getDateAfterFourDays(),
+          ngayDatHang: getDateNow(),
+          see: false,
+        });
 
-    // Cập nhật lại localStorage
-    localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
-    localStorage.removeItem("payCartMent"); // Xóa danh sách sản phẩm thanh toán
+        // Cập nhật lại localStorage
+        localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
+        localStorage.removeItem("payCartMent"); // Xóa danh sách sản phẩm thanh toán
 
-    const listAccount = JSON.parse(localStorage.getItem("account")) || [];
-    const updatedListAccount = listAccount.map((acc) =>
-      acc.username === account.username ? { ...updatedAccount } : acc
-    );
-    localStorage.setItem("account", JSON.stringify(updatedListAccount));
-    localStorage.setItem(
-      "voucherList",
-      JSON.stringify(
-        voucherList.filter((item) =>
-          myVoucher.find((voucher) => voucher.id !== item.id && !item.select)
-        )
-      )
-    );
-    navigate("/paymentSuccess", { replace: true });
+        const listAccount = JSON.parse(localStorage.getItem("account")) || [];
+        const updatedListAccount = listAccount.map((acc) =>
+          acc.username === account.username ? { ...updatedAccount } : acc
+        );
+        localStorage.setItem("account", JSON.stringify(updatedListAccount));
+
+        localStorage.setItem(
+          "voucherList",
+          JSON.stringify(
+            voucherList.filter((item) =>
+              myVoucher.find(
+                (voucher) => voucher.id !== item.id && !item.select
+              )
+            )
+          )
+        );
+
+        navigate("/paymentSuccess", { replace: true });
+      })
+      .catch((error) => {
+        console.error("Lỗi khi cập nhật sold:", error);
+      });
   }
 
   function totalVoucher(priceTotal) {
@@ -183,6 +219,7 @@ function PaymentCartPage() {
         voucherList={voucherList}
         setVoucherList={setVoucherList}
         setMess={setMess}
+        totalPrice={totalPrice}
       />
       {/* Header */}
       <div className="flex items-center p-8 bg-white gap-6 shadow-md">
@@ -206,9 +243,9 @@ function PaymentCartPage() {
           </span>
         </div>
         {/* Body */}
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           {/* Chi tiết đơn hàng */}
-          <div className="w-[70%] mx-4">
+          <div className="w-full md:w-[70%] mx-4">
             <div>
               <h1 className="font-bold text-[30px]">Đơn hàng</h1>
               <div>
@@ -274,7 +311,9 @@ function PaymentCartPage() {
                             <h1 className="text-red-500 font-bold">
                               {formatCurrency(
                                 (product.price -
-                                  product.price * (product.sale / 100)) *
+                                  (product.sale
+                                    ? product.price * (product.sale / 100)
+                                    : 0)) *
                                   (product.quantity || 1)
                               )}
                             </h1>
@@ -282,6 +321,20 @@ function PaymentCartPage() {
                         </div>
                       </div>
                     ))}
+                  </div>
+                  <div className="mb-4 mt-2 p-3 border-l-4 border-blue-500 bg-blue-50">
+                    <h3 className="text-[30px] font-semibold text-blue-600">
+                      Chính Sách Mua Hàng
+                    </h3>
+                    <ul className="text-[20px] text-gray-700 list-disc pl-5">
+                      <li>Đổi trả trong 7 ngày nếu lỗi nhà sản xuất.</li>
+                      <li>Giao hàng toàn quốc từ 3 - 7 ngày.</li>
+                      <li>
+                        Miễn phí vận chuyển cho đơn hàng có 2 đơn trở lên.
+                      </li>
+                      <li>Hỗ trợ bảo hành chính hãng.</li>
+                      <li>Thanh toán an toàn qua Tiền mặt, ZaloPay, MoMo.</li>
+                    </ul>
                   </div>
                   {/* Phương thức thanh toán */}
                   <div className="bg-white p-3 rounded-md text-[18px] mt-3">
@@ -366,7 +419,26 @@ function PaymentCartPage() {
               </div>
               <div
                 className="p-3 bg-primary w-[190px] text-center font-semibold mx-auto cursor-pointer text-white rounded-md"
-                onClick={() => setVoucherPopup(true)}
+                onClick={() => {
+                  setVoucherPopup(true);
+                  setTotalPrice(
+                    product.reduce(
+                      (total, item) => total + item.price * item.quantity,
+                      0
+                    ) +
+                      37000 -
+                      product.reduce(
+                        (total, item) =>
+                          total +
+                          (item.sale ? item.price * (item.sale / 100) : 0),
+                        0
+                      ) -
+                      (product.length > 1 ||
+                      product.find((pro) => pro.quantity > 1)
+                        ? 37000
+                        : 0)
+                  );
+                }}
               >
                 Chọn Voucher
               </div>
@@ -521,6 +593,7 @@ function PaymentCartPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -13,7 +13,7 @@ const thuongHieuList = [
   },
   {
     id: 4,
-    name: "Oppo",
+    name: "OPPO",
   },
   {
     id: 5,

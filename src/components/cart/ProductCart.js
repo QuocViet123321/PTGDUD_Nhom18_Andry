@@ -51,7 +51,7 @@ function ProductCart({
 
   return (
     <div className="bg-white p-3 rounded-md text-[18px] mt-3">
-      <div className="flex items-center">
+      <div className="flex  items-center">
         <div className="flex w-[35%] items-center">
           <input
             type="checkbox"
@@ -75,7 +75,11 @@ function ProductCart({
             <div>
               <h1 className="line-clamp-2">{product.name}</h1>
               <div className="flex gap-1">
-                <img src={GiaoHangIcon} alt="" className="w-[28px]" />
+                <img
+                  src={GiaoHangIcon}
+                  alt=""
+                  className="hidden md:block w-[28px]"
+                />
                 <span className="text-secondary text-[15px]">
                   Giao hàng ngày {getDateAfterFourDays()}
                 </span>
@@ -121,7 +125,8 @@ function ProductCart({
         <div className="w-[20%]">
           <h1 className="text-red-500 font-bold">
             {formatCurrency(
-              (product.price - product.price * (product.sale / 100)) *
+              (product.price -
+                (product.sale ? product.price * (product.sale / 100) : 0)) *
                 product.quantity
             )}
           </h1>

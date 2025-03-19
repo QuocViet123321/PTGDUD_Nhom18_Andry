@@ -8,6 +8,7 @@ import GiaoHangIcon from "../assets/camket/giaohang.png";
 import formatCurrency from "../caculator/FormatCurrency";
 import LocationIcon from "../assets/camket/dinhvi.png";
 import CancelOrder from "../components/CancelOrder";
+import Footer from "../components/Footer";
 
 function ProductSoldPage() {
   const [product, setProduct] = useState([]);
@@ -83,10 +84,7 @@ function ProductSoldPage() {
                       >
                         <div className="flex items-center">
                           <div className="flex w-[35%] items-center">
-                            <div
-                              className="flex cursor-pointer"
-                              onClick={() => navigate("/productDetail")}
-                            >
+                            <div className="flex cursor-pointer">
                               <img
                                 src={product.product.img[0].img}
                                 alt=""
@@ -138,8 +136,10 @@ function ProductSoldPage() {
                             <h1 className="text-red-500 font-bold">
                               {formatCurrency(
                                 (product.product.price -
-                                  product.product.price *
-                                    (product.product.sale / 100)) *
+                                  (product.sale
+                                    ? product.product.price *
+                                      (product.product.sale / 100)
+                                    : 0)) *
                                   (product.product.quantity || 1)
                               )}
                             </h1>
@@ -250,6 +250,7 @@ function ProductSoldPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -36,7 +36,7 @@ function Notification() {
             </span>
           )}
         </div>
-        <span className="text-secondary text-lg group-hover:text-primary ml-2">
+        <span className="text-secondary text-lg group-hover:text-primary ml-2 hidden md:block">
           Thông báo
         </span>
       </div>

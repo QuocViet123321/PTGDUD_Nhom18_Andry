@@ -1,6 +1,11 @@
 import { IoIosSearch } from "react-icons/io";
 
-function SearchHistory({ searchHistory, setSearchHistory, setSearch }) {
+function SearchHistory({
+  searchHistory,
+  setSearchHistory,
+  setSearch,
+  handleSearch,
+}) {
   const handleDelete = (searchToDelete) => {
     const updatedHistory = searchHistory.filter(
       (item) => item !== searchToDelete
@@ -20,7 +25,10 @@ function SearchHistory({ searchHistory, setSearchHistory, setSearch }) {
             <div
               key={index}
               className="flex p-2 items-center gap-2 hover:bg-gray-200 cursor-pointer "
-              onClick={() => setSearch(search)}
+              onClick={() => {
+                setSearch(search);
+                handleSearch();
+              }}
             >
               <IoIosSearch className="text-[28px] text-secondary" />
               <span className="text-lg cursor-pointer">{search}</span>

@@ -5,19 +5,24 @@ import { RiAccountCircle2Line } from "react-icons/ri";
 import { FaBookOpen } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { RiMoneyDollarBoxLine } from "react-icons/ri";
-import { MdSupervisorAccount } from "react-icons/md";
+import { MdPassword, MdPolicy, MdSupervisorAccount } from "react-icons/md";
 import { IoMdExit } from "react-icons/io";
 import AccountInfo from "../components/itemsAccountInfo/AccountInfo";
 import OrderManagement from "../components/itemsAccountInfo/OrderManagement";
 import ConfirmDialog from "../message/ConfirmDialog";
+import Blog from "../components/itemsAccountInfo/Blog";
+import Policy from "../components/itemsAccountInfo/Policy";
+import ChangePassword from "./ChangePassword";
 
 const infoList = [
   { id: 1, name: "Thông tin tài khoản", icon: RiAccountCircle2Line },
   { id: 2, name: "Quản lý đơn hàng", icon: FaBookOpen },
   { id: 3, name: "Địa chỉ giao hàng", icon: IoLocationOutline },
-  { id: 4, name: "Mã giảm giá", icon: RiMoneyDollarBoxLine },
+  { id: 4, name: "Blog", icon: RiMoneyDollarBoxLine },
   { id: 5, name: "Hỗ trợ khách hàng", icon: MdSupervisorAccount },
-  { id: 6, name: "Đăng xuất", icon: IoMdExit },
+  { id: 6, name: "Đổi mật khẩu", icon: MdPassword },
+  { id: 7, name: "Chính sách", icon: MdPolicy },
+  { id: 8, name: "Đăng xuất", icon: IoMdExit },
 ];
 
 function AccountPage() {
@@ -27,7 +32,7 @@ function AccountPage() {
   const [showConfirm, setShowConfirm] = useState(false);
 
   const handleMenuClick = (data) => {
-    if (data.id === 6) {
+    if (data.id === 8) {
       setShowConfirm(true);
     } else if (data.id === 3) {
       navigate("/instantShipping");
@@ -82,6 +87,9 @@ function AccountPage() {
           <div className="w-full md:w-4/5 bg-white rounded-md shadow-md p-3 md:p-4">
             {filter === 1 && <AccountInfo account={account} />}
             {filter === 2 && <OrderManagement />}
+            {filter === 4 && <Blog />}
+            {filter === 7 && <Policy />}
+            {filter === 6 && <ChangePassword />}
           </div>
         </div>
       </div>

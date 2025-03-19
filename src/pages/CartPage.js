@@ -9,6 +9,7 @@ import ShippingInfo from "../components/cart/ShippingInfo";
 import { useNavigate } from "react-router-dom";
 import formatCurrency from "../caculator/FormatCurrency";
 import Message from "../message/Message";
+import Footer from "../components/Footer";
 
 function CartPage() {
   const navigate = useNavigate();
@@ -83,7 +84,7 @@ function CartPage() {
           <Header />
           <div className="bg-[#f5f5fa] min-h-[600px]">
             <div className="bg-white p-4 my-1">
-              <div className="flex items-center justify-end">
+              <div className="flex  items-center justify-end">
                 <img src={LocationIcon} alt="" className="w-[30px]" />
                 <span className="text-secondary text-[20px]">Giao đến: </span>
                 <span className="text-[20px] underline">
@@ -100,9 +101,9 @@ function CartPage() {
             </div>
             {/* Body */}
             {cart.length > 0 ? (
-              <div className="flex p-5">
+              <div className="flex flex-col md:flex-row p-5">
                 {/* Chi tiết đơn hàng */}
-                <div className="w-[70%] ">
+                <div className="w-full md:w-[70%] ">
                   <div>
                     <h1 className="font-bold text-xl">GIỎ HÀNG</h1>
                     <div>
@@ -141,7 +142,7 @@ function CartPage() {
                   </div>
                 </div>
                 {/* Chi tiết thanh toán */}
-                <div className="flex-1">
+                <div className="w-full md:flex-1">
                   <ShippingInfo account={account} />
                   <div className="bg-white rounded-md mx-auto my-3 w-[90%] px-4 py-8">
                     <div className="border-b pb-2">
@@ -198,6 +199,7 @@ function CartPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

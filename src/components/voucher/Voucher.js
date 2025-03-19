@@ -1,7 +1,13 @@
 import { GoInfo } from "react-icons/go";
 import { useState } from "react";
 
-function Voucher({ datavoucher, myVoucher, setMyVoucher, setVoucherList }) {
+function Voucher({
+  datavoucher,
+  myVoucher,
+  setMyVoucher,
+  setVoucherList,
+  totalPrice,
+}) {
   const [errorMessage, setErrorMessage] = useState("");
   const isSelected = myVoucher.some((v) => v.id === datavoucher.id);
 
@@ -33,42 +39,48 @@ function Voucher({ datavoucher, myVoucher, setMyVoucher, setVoucherList }) {
   };
 
   return (
-    <div className="w-full">
-      <div className="w-[100%] p-6 border rounded-lg">
-        <div className="flex justify-between">
-          <h1 className="text-[25px] font-semibold">{datavoucher.name}</h1>
-          <GoInfo className="text-[25px]" />
-        </div>
-
-        <div className="flex justify-between">
-          <div>
-            <p className="text-[20px] text-secondary">
-              {datavoucher.condition}
-            </p>
-            <div className="text-[20px] text-secondary">
-              <span>Ngày kết thúc:</span>
-              <span>{" " + datavoucher.endDate}</span>
+    <>
+      {datavoucher.valueCondition <= totalPrice && (
+        <div className="w-full">
+          <div className="w-[100%] p-6 border rounded-lg">
+            <div className="flex justify-between">
+              <h1 className="text-[25px] font-semibold">{datavoucher.name}</h1>
+              <GoInfo className="text-[25px]" />
             </div>
+
+            <div className="flex justify-between">
+              <div>
+                <p className="text-[20px] text-secondary">
+                  {datavoucher.condition}
+                </p>
+                <div className="text-[20px] text-secondary">
+                  <span>Ngày kết thúc:</span>
+                  <span>{" " + datavoucher.endDate}</span>
+                </div>
+              </div>
+
+              <button
+                className={`py-2 px-6 rounded-md font-semibold ${
+                  isSelected
+                    ? "bg-gray-500 text-white"
+                    : "bg-primary/70 text-white"
+                }`}
+                onClick={handleSelectVoucher}
+              >
+                {isSelected ? "Bỏ chọn" : "Chọn"}
+              </button>
+            </div>
+
+            {/* Hiển thị thông báo lỗi nếu có */}
+            {errorMessage && (
+              <p className="mt-2 text-red-500 text-lg font-semibold">
+                {errorMessage}
+              </p>
+            )}
           </div>
-
-          <button
-            className={`py-2 px-6 rounded-md font-semibold ${
-              isSelected ? "bg-gray-500 text-white" : "bg-primary/70 text-white"
-            }`}
-            onClick={handleSelectVoucher}
-          >
-            {isSelected ? "Bỏ chọn" : "Chọn"}
-          </button>
         </div>
-
-        {/* Hiển thị thông báo lỗi nếu có */}
-        {errorMessage && (
-          <p className="mt-2 text-red-500 text-lg font-semibold">
-            {errorMessage}
-          </p>
-        )}
-      </div>
-    </div>
+      )}
+    </>
   );
 }
 

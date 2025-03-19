@@ -1,0 +1,2954 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "Điện thoại AI Samsung Galaxy S24 Ultra, Camera 200MP Zoom 100x, S Pen - Hàng Chính Hãng",
+      "price": 31090000,
+      "thuongHieu": "Samsung",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/5b/7f/3e/4df5438a9ab573ede025c941a155c1b4.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/76/aa/c3/1eaa3b283a42bfc7ab7166d06844d101.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/f3/3f/0d/8c158e4de31e496a21d4a91a73551e15.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/45/4c/00/f2729a5048a6c397551f28f2eaf23bd6.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "S 24 Ultra"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 13,
+      "inventory": 30
+    },
+    {
+      "id": "2",
+      "name": "Apple iPhone 16 - Hàng chính hãng giá ưu đãi",
+      "price": 20900000,
+      "thuongHieu": "Apple",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/08/c4/e4/7f1e1531606703edb5055af6f0578e24.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/91/c2/17/1b2a787927d9b8a76dbdb5c65769cdcd.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/be/1f/2b/8a9395d5f18337a1060abcc2ff5011f9.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/9e/cb/31/ab5bf3021b24e9124eeab62581f4abe5.jpg.webp"
+        }
+      ],
+      "star": 4,
+      "info": [
+        {
+          "name": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Apple"
+        },
+        {
+          "name": "Hỗ trợ thẻ nhớ ngoài",
+          "value": "Không"
+        },
+        {
+          "name": "Chip set",
+          "value": "Chip A18"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "Super Retina XDR"
+        },
+        {
+          "name": "GPS",
+          "value": "Có"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Phụ kiện đi kèm",
+          "value": "Cáp Sạc USB‑C (1m), Sách hướng dẫn"
+        },
+        {
+          "name": "Model",
+          "value": "iPhone 16"
+        },
+        {
+          "name": "Jack tai nghe",
+          "value": "Type-C"
+        },
+        {
+          "name": "Loại pin",
+          "value": "lithium-ion"
+        },
+        {
+          "name": "Xuất xứ (Made in)",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Cổng sạc",
+          "value": "Type-C"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Apple Việt Nam"
+      },
+      "sale": 10,
+      "sold": 4,
+      "inventory": 20
+    },
+    {
+      "id": "5",
+      "name": "Apple iPhone 16 Plus - Hàng Chính Hãng",
+      "price": 21990000,
+      "thuongHieu": "Apple",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/b4/2c/b9/59569bb010e754e338314671c16c84a8.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/43/b3/2c/caecfd747dd693acd53278f11a16bf68.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/07/43/16/a80718b248a0284e2d7f4374d17c33a8.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/88/2e/12/6dde2f1ff4634b7166bcf6d70be0a5e4.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Iphone"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Iphone 16 Plus"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Iphone Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "6",
+      "name": "Apple iPhone 15 Plus - Hàng Chính Hãng",
+      "price": 31090000,
+      "thuongHieu": "Apple",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/eb/49/51/095286f68a0e1defafb18a70ced13569.png.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/92/77/56/c1c909a37d5f04d54bb3e15408bf98a8.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/fc/12/65/2836a97d182e850f2f6ac4d0f119a725.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/11/86/10/c8abe2676491f67b1c8235cc04b39985.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Iphone"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Apple iPhone 15 Plus"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Iphone Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "7",
+      "name": "Apple iPhone 16 Pro - Hàng Chính Hãng",
+      "price": 24990000,
+      "thuongHieu": "Apple",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/30/f1/ec/bbde43f59e7724c4c474bb81f388f98e.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/a4/0b/48/e7d16a01107c0558d488d4237146ad5e.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/af/bf/d1/45c3394081781b2f1c65a9f03c14beb5.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/8f/3a/ed/a89767aee8305dfc41427b2aaf164ac1.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Iphone"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "iPhone 16 Pro"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Iphone Việt Nam"
+      },
+      "sale": 15,
+      "sold": 2,
+      "inventory": 30
+    },
+    {
+      "id": "8",
+      "name": "Apple iPhone 16e - Hàng Chính Hãng",
+      "price": 16490000,
+      "thuongHieu": "Apple",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/97/d2/28/7e324dded7d29cd43a69e1f7bf9ec856.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/7e/3d/9e/8c6cd3c9791550705b27eac70b10d51c.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/97/d2/28/7e324dded7d29cd43a69e1f7bf9ec856.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/d8/dd/04/54d75231a35fbd3abc0ef50e5991fcc6.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Iphone"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Apple iPhone 16e"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Iphone Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "9",
+      "name": "Apple iPhone 13 - Hàng Chính Hãng",
+      "price": 11990000,
+      "thuongHieu": "Apple",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/b7/ba/88/66059a54a3a139d45841d412379b1fe4.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/42/64/87/0ba88c34c1d968042af407fb9e4e9029.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/6a/ff/b8/58aba2228f802ff70736368ccae00ade.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/ba/f1/6c/b72c2c966e728c24cc50cefa330d5d2d.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Iphone"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Apple iPhone 13"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Iphone Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "10",
+      "name": "Điện thoại Samsung Galaxy S25+, Điện thoại AI, Tìm kiếm thông minh, Video camera đêm Nightography, Chip Snapdragon - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 23590000,
+      "thuongHieu": "Samsung",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/ee/ce/14/379a72e23f651d6e35f223147be4b160.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/9a/9a/05/17a8e2edc351bf5be903723364fcfa2c.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/9f/74/c4/ed5dc00f3da7f2584c86f07c0895cb92.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/a8/1c/50/5d93120d3e038a8260335e2ac680e709.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Samsung Galaxy S25+"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "11",
+      "name": "Điện thoại Samsung Galaxy S25, Điện thoại AI, Tìm kiếm thông minh, Video camera đêm Nightography, Chip Snapdragon - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 19990000,
+      "thuongHieu": "Samsung",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/48/8d/5b/9970e6afa886f16c3eea3310af964b11.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/ff/a7/aa/8a5987023fbffb3525987d9059d811e2.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/89/c1/f6/540baae0b0e987fb4486795ef900cf2c.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/9f/74/c4/7e47f54be93dc9e6e2b43ca5634c37f2.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Samsung Galaxy S25"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "12",
+      "name": "Điện Thoại Samsung Galaxy A05s (4GB/128GB) - Hàng Chính Hãng  - Hàng Chính Hãng",
+      "price": 3625000,
+      "thuongHieu": "Samsung",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/bb/16/31/d535daa04d8fa9037a38fdf0becc26a0.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/1d/5a/64/741d0c99bc49b5f2473c860fdeb7dbb9.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/3e/6a/ff/e3f205c41457606b4ca23ce816f7ce58.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/b9/df/5c/eacb79da95700b20b1af1598df45ff68.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Samsung Galaxy A05s"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "13",
+      "name": "Điện Thoại Samsung Galaxy A06 (4GB/128GB) -  Đã kích hoạt bảo hành điện tử - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 2450000,
+      "thuongHieu": "Samsung",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/64/ef/a2/b550998c7e6b354ddc03b134cac81735.png.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/14/03/26/ac9c83f26045561cc6fa5e05038b85a0.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/2e/bc/f1/43a0fdd738c26e4c3d0b0b1cd794e5f9.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/49/2b/ec/6bfa31931fbfe5e4f93d7beef0347dd1.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Samsung Galaxy A06"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 13,
+      "inventory": 30
+    },
+    {
+      "id": "14",
+      "name": "Điện Thoại Samsung Galaxy A16 LTE (4GB/128GB) - Đã kích hoạt bảo hành điện tử - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 3820000,
+      "thuongHieu": "Samsung",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/02/59/95/3897103ae79ab6e504d5178dbe2452b4.png.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/da/af/09/3da6b36682deb00818b404272bd8be58.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/02/59/95/3897103ae79ab6e504d5178dbe2452b4.png.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/da/af/09/3da6b36682deb00818b404272bd8be58.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Samsung Galaxy A16 LTE"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 13,
+      "inventory": 30
+    },
+    {
+      "id": "15",
+      "name": "Điện thoại Samsung Galaxy Z Flip6 (12GB/ 512GB) - Hàng chính hãng - Hàng Chính Hãng",
+      "price": 19490000,
+      "thuongHieu": "Samsung",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/29/9d/26/74123800cac9047d666f226186ddddd7.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/85/46/70/f5f79aec62bd00a31fc139c3366b0ec0.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/1c/f7/d7/6e64b34eb5c7ed9ea9cec205ebca0255.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/1e/86/dc/1e41b202f803943ef126182694fa94be.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.3"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Samsung"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Hàn Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Adreno 750"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 147 mm - Ngang 70.6 mm - Dày 7.6 mm - Nặng 167 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Samsung Galaxy S25+"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Samsung Việt Nam"
+      },
+      "sale": 15,
+      "sold": 12,
+      "inventory": 30
+    },
+    {
+      "id": "16",
+      "name": "Điện Thoại Xiaomi Redmi Note 12 Pro 4G 8GB/256GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 4490000,
+      "thuongHieu": "Xiaomi",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/e3/a0/e4/325722405c2c3ce7f650616cd8d5ec13.png.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/60/04/2d/7aad99d930a42b12c45ddd1d84608958.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/33/8a/85/8900ae5515256ecc4e374f2dd750ebc1.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/7e/66/df/13d424f8bd3eca9894b0c32cb30d557b.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.1"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 108 MP và Phụ 8 MP, 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "16MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Qualcomm SM7150 Snapdragon 732G (8 nm)"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 164.2 mm - Ngang 76.1 mm - Dày 8.12 mm - Nặng 201.8 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "AMOLED"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Redmi Note 12 Pro 4G"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 5,
+      "sold": 10,
+      "inventory": 20
+    },
+    {
+      "id": "17",
+      "name": "Điện thoại Xiaomi Redmi Note 10T 5G 4GB/64GB - Màn 90HZ - Chống Nước IP68 - Hàng Nhập Khẩu - Bản quốc tế - Hàng Chính Hãng",
+      "price": 2674000,
+      "thuongHieu": "Xiaomi",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/bf/75/49/c8aa5e2218348a6b422259d67bd516dc.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/fc/d1/a4/1107cd2c787014ed600b371964b6edfd.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/3a/74/35/c94fac5f3d48315015c4d36757727093.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/1f/62/e0/4939cd323954efdba09671dc3473bed0.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.1"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Qualcomm Snapdragon 480"
+        },
+        {
+          "name": "Ram",
+          "value": "4GB"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 164.2 mm - Ngang 76.1 mm - Dày 8.12 mm - Nặng 201.8 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": " IPS LCD6.5 Full HD+"
+        },
+        {
+          "name": "Dung lượng lưu trữ",
+          "value": "64GB"
+        },
+        {
+          "name": "Model",
+          "value": "Xiaomi Redmi Note 10T"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 8,
+      "sold": 20,
+      "inventory": 20
+    },
+    {
+      "id": "18",
+      "name": "Điện thoại Xiaomi Redmi Note 9T 4GB/128GB 5G Dimensity 800U 5G, Có NFC , Rom tiếng việt - Hàng nhập khẩu Nhật - Hàng Chính Hãng",
+      "price": 2674000,
+      "thuongHieu": "Xiaomi",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/29/e8/0d/a540fa81d960d0eba2ee341715a64f01.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/e7/31/f1/f77d61e9eed77c8440fb2a63c38795cd.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/33/28/cd/b121d2a5e89bc663f50c4af7553e7982.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.1"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Qualcomm Snapdragon 480"
+        },
+        {
+          "name": "Ram",
+          "value": "4GB"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 164.2 mm - Ngang 76.1 mm - Dày 8.12 mm - Nặng 201.8 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": " IPS LCD6.5 Full HD+"
+        },
+        {
+          "name": "Dung lượng lưu trữ",
+          "value": "64GB"
+        },
+        {
+          "name": "Model",
+          "value": "Xiaomi Redmi Note 10T"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 5,
+      "sold": 20,
+      "inventory": 20
+    },
+    {
+      "id": "19",
+      "name": "Điện Thoại Xiaomi 14T 5G 12GB/512GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 11779000,
+      "thuongHieu": "Xiaomi",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/e0/7f/fb/7cab0488b74a0eddc3871f56922a9d78.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.4"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "MediaTek Dimensity 8300 Ultra"
+        },
+        {
+          "name": "Ram",
+          "value": "4GB"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 160.5 mm - Ngang 75.1 mm - Dày 7.8 mm - Nặng 195 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": " IPS LCD6.5 Full HD+"
+        },
+        {
+          "name": "Dung lượng lưu trữ",
+          "value": "64GB"
+        },
+        {
+          "name": "Model",
+          "value": "Xiaomi Redmi Note 10T"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 10,
+      "sold": 20,
+      "inventory": 40
+    },
+    {
+      "id": "20",
+      "name": "Điện thoại Xiaomi Redmi 14C - Hàng chính hãng - Hàng Chính Hãng",
+      "price": 3290000,
+      "thuongHieu": "Xiaomi",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/a7/c7/b6/bb9ee4406216746f6c6cbafcf1e31561.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.4"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "MediaTek Dimensity 8300 Ultra"
+        },
+        {
+          "name": "Ram",
+          "value": "4GB"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 160.5 mm - Ngang 75.1 mm - Dày 7.8 mm - Nặng 195 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": " IPS LCD6.5 Full HD+"
+        },
+        {
+          "name": "Dung lượng lưu trữ",
+          "value": "64GB"
+        },
+        {
+          "name": "Model",
+          "value": "Xiaomi Redmi Note 10T"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 12,
+      "sold": 20,
+      "inventory": 40
+    },
+    {
+      "id": "21",
+      "name": "Điện Thoại Xiaomi 14T Pro 5G 12GB/512GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 17990000,
+      "thuongHieu": "Xiaomi",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/c8/d5/4c/f148c186200f8d7445d396aa648d31d5.jpg.webp"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.4"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 108 MP và Phụ 8 MP, 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "16MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "MediaTek Dimensity 9300"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 164.2 mm - Ngang 76.1 mm - Dày 8.12 mm - Nặng 201.8 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "AMOLED"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Redmi Note 12 Pro 4G"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "18 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 16,
+      "sold": 4,
+      "inventory": 20
+    },
+    {
+      "id": "22",
+      "name": "Điện Thoại Xiaomi POCO C75 6GB/128GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 3390000,
+      "thuongHieu": "Xiaomi",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/c8/c9/cc/8716200f1576c0e8d1b6157235783a7f.jpg.webp"
+        }
+      ],
+      "star": 4,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5160 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.4"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 108 MP và Phụ 8 MP, 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "16MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Helio G81-Ultra"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 164.2 mm - Ngang 76.1 mm - Dày 8.12 mm - Nặng 201.8 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "AMOLED"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Xiaomi POCO C75 6GB/128GB"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "18 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 13,
+      "sold": 9,
+      "inventory": 20
+    },
+    {
+      "id": "23",
+      "name": "Điện Thoại Xiaomi Redmi Note 14 6GB/128GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 4990000,
+      "thuongHieu": "Xiaomi",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/cc/35/aa/0ef2be60adfff08b7cffb6e35f026c14.jpg.webp"
+        }
+      ],
+      "star": 4,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5500 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.4"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Xiaomi"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 108 MP và Phụ 8 MP, 2 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "16MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Helio G81-Ultra"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 163.25 mm - Ngang 76.55 mm - Dày 8.16 mm - Nặng 196.5 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "AMOLED"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Xiaomi Redmi Note 14"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "18 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Xiaomi Việt Nam"
+      },
+      "sale": 17,
+      "sold": 5,
+      "inventory": 31
+    },
+    {
+      "id": "24",
+      "name": "Điện Thoại Realme C65 8GB/128GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 4290000,
+      "thuongHieu": "Realme",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/7b/17/9b/b71d2cf475ff79f5dfb56d7fa75be2b5.jpg.webp"
+        }
+      ],
+      "star": 2,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.0"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Realme"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "MediaTek Helio G85"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 165.66 mm - Ngang 76.1 mm - Dày 7.64 mm - Nặng 185 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "QHD+ Dynamic AMOLED 2X"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Realme C65 8GB/128GB"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Realme Việt Nam"
+      },
+      "sale": 15,
+      "sold": 9,
+      "inventory": 30
+    },
+    {
+      "id": "25",
+      "name": "Điện Thoại Realme C75 8GB/256GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 6490000,
+      "thuongHieu": "Realme",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/0c/9d/20/7de2c40001ac319301a01c667fda8d5e.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "#"
+        },
+        {
+          "id": 2,
+          "img": "#"
+        },
+        {
+          "id": 3,
+          "img": "#"
+        }
+      ],
+      "star": 3,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "6000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.0"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Realme"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "MediaTek Helio G92 Max 8 nhân"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 165.69 mm - Ngang 76.22 mm - Dày 7.99 mm - Nặng 196 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "IPS LCD"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Realme C75 8GB/256GB"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Realme Việt Nam"
+      },
+      "sale": 15,
+      "sold": 4,
+      "inventory": 16
+    },
+    {
+      "id": "26",
+      "name": "Điện thoại Realme Note 60 (4GB/128GB) - Hàng chính hãng - Hàng Chính Hãng",
+      "price": 3390000,
+      "thuongHieu": "Realme",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/19/d3/77/fc7cc1e39568b61e15b7c85f07b20751.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/1b/09/12/b3519f2617aabcfcdf2c25f313662823.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/1e/fe/e5/60696d1346a9c1f068f1c932979656e4.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/89/42/fb/d06065839b79e1fa9beaa454207f9013.jpg.webp"
+        }
+      ],
+      "star": 1,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.0"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Realme"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "32MP, f/1.8"
+        },
+        {
+          "name": "Camera trước",
+          "value": "5MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Chip UNISOC T612"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 165.69 mm - Ngang 76.22 mm - Dày 7.99 mm - Nặng 196 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "IPS LCD"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Realme C75 8GB/256GB"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Realme Việt Nam"
+      },
+      "sold": 0,
+      "inventory": 16
+    },
+    {
+      "id": "27",
+      "name": "Điện thoại Realme Note 50 , Màn 90HZ (3GB/64GB) Rom quốc tế - Hàng chính hãng - Hàng Chính Hãng",
+      "price": 2690000,
+      "thuongHieu": "Realme",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/41/cd/bb/1602f9d78df7386eb039261a9a8ea17d.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/80/58/d9/04585aaa1ffa8681325d3ac77b30d969.jpg.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/d7/0f/da/35a3ab2c1a87b18bfb294a56b931cb73.jpg.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/80/58/d9/04585aaa1ffa8681325d3ac77b30d969.jpg.webp"
+        }
+      ],
+      "star": 3,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.0"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Realme"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Unisoc Tiger T612"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 165.69 mm - Ngang 76.22 mm - Dày 7.99 mm - Nặng 196 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "IPS LCD"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Note 50"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "6 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Realme Việt Nam"
+      },
+      "sale": 23,
+      "sold": 1,
+      "inventory": 19
+    },
+    {
+      "id": "28",
+      "name": "Điện thoại Realme V60S (6GB/128GB) 5G , Chíp Dimensity 6300, Rom tiếng việt - Hàng nhập khẩu - Hàng Chính Hãng",
+      "price": 3990000,
+      "thuongHieu": "Realme",
+      "flashSale": true,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/30/de/59/f6caacedb844ca61c9448a2f30da4ba6.jpg.webp"
+        },
+        {
+          "id": 1,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/88/33/18/cc2e7beca9a94280141b65ac1aa6c641.png.webp"
+        },
+        {
+          "id": 2,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/4a/81/96/cb4ac5544e311d3a9ea204d97dd5ec71.png.webp"
+        },
+        {
+          "id": 3,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/64/d6/90/43fad7d51b52862a7ab851b0cede22e3.png.webp"
+        }
+      ],
+      "star": 2,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.0"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Realme"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Unisoc Tiger T612"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 165.69 mm - Ngang 76.22 mm - Dày 7.99 mm - Nặng 196 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "Full HD+ (1080 x 2400 Pixels)"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Note 50"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "6 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Realme Việt Nam"
+      },
+      "sale": 25,
+      "sold": 2,
+      "inventory": 15
+    },
+    {
+      "id": "29",
+      "name": "Điện Thoại Realme C65s 8GB/128GB - Hàng Chính Hãng - Hàng Chính Hãng",
+      "price": 3990000,
+      "thuongHieu": "Realme",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://salt.tikicdn.com/cache/750x750/ts/product/a2/75/58/c2e7122e39ab7c6bd099f812263c73c7.jpg.webp"
+        }
+      ],
+      "star": 2,
+      "info": [
+        {
+          "name": "Dung lượng pin",
+          "value": "5000 mAh"
+        },
+        {
+          "name": "Bluetooth",
+          "value": "v5.0"
+        },
+        {
+          "name": "Thương hiệu",
+          "value": "Realme"
+        },
+        {
+          "name": "Xuất xứ thương hiệu",
+          "value": "Trung Quốc"
+        },
+        {
+          "name": "Camera sau",
+          "value": "12MP,200MP,50MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "12MP"
+        },
+        {
+          "name": "Chip đồ họa (GPU)",
+          "value": "Unisoc Tiger T612"
+        },
+        {
+          "name": "NFC",
+          "value": "Có"
+        },
+        {
+          "name": "Đèn Flash",
+          "value": "Có"
+        },
+        {
+          "name": "Kích thước",
+          "value": "Dài 165.69 mm - Ngang 76.22 mm - Dày 7.99 mm - Nặng 196 g"
+        },
+        {
+          "name": "Loại/ Công nghệ màn hình",
+          "value": "Full HD+ (1080 x 2400 Pixels)"
+        },
+        {
+          "name": "Hỗ trợ 5G",
+          "value": "Có"
+        },
+        {
+          "name": "Model",
+          "value": "Note 50"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "6 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Realme Việt Nam"
+      },
+      "sale": 20,
+      "sold": 2,
+      "inventory": 15
+    },
+    {
+      "id": "30",
+      "name": "Điện thoại vivo V40 Lite 8GB/256GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 8490000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/329959/vivo-v40-lite-8gb-256gb-thumb-600x600.jpg"
+        },
+        {
+          "id": 1,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/329959/Slider/vivo-v40-lite-8gb-256gb638640713853122550.jpg"
+        },
+        {
+          "id": 2,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/329959/Slider/vivo-v40-lite-8gb-256gb638640713854292660.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 685 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "32 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5000 mAh, Sạc 80 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sale": 0,
+      "sold": 24000
+    },
+    {
+      "id": "31",
+      "name": "Điện thoại vivo Y28 8GB/128GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 5290000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/326016/vivo-y28-vang-thumb-600x600.jpg"
+        },
+        {
+          "id": 1,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/326016/Slider/vi-vn-vivo-y28-thiet-ke-2.jpg"
+        },
+        {
+          "id": 2,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/326016/Slider/vi-vn-vivo-y28-man-hinh-3.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "MediaTek Helio G85"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "128 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "6000 mAh, Sạc 44 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sale": 8,
+      "sold": 50
+    },
+    {
+      "id": "32",
+      "name": "Điện thoại vivo V40 5G 12GB/256GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 12990000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/331985/vivo-v40-5g-thumb-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 7 Gen 3 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "12 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "2 camera 50 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "50 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5500 mAh, Sạc 80 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sale": 0,
+      "sold": 3600
+    },
+    {
+      "id": "33",
+      "name": "Điện thoại vivo Y19s 6GB/128GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 4290000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/331200/vivo-y19s-bac-thumb-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Unisoc Tiger T612"
+        },
+        {
+          "name": "RAM",
+          "value": "6 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "128 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 0.08 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "5 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5500 mAh, Sạc 15 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sold": 27000
+    },
+    {
+      "id": "34",
+      "name": "Điện thoại vivo Y03 4GB/128GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 3290000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/322996/vivo-y03-xanh-thumb-1-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "MediaTek Helio G85"
+        },
+        {
+          "name": "RAM",
+          "value": "4 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "128 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 13 MP & Phụ 0.08 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "5 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5000 mAh, Sạc 15 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sale": 0,
+      "sold": 50300
+    },
+    {
+      "id": "35",
+      "name": "Điện thoại vivo V30e 5G 12GB/256GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 9990000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/325136/vivo-v30e-nau-thumb-1-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 6 Gen 1 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "12 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 8 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "32 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5500 mAh, Sạc 44 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sale": 4,
+      "sold": 3800
+    },
+    {
+      "id": "36",
+      "name": "Điện thoại vivo V30 5G 12GB/512GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 12790000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/319214/vivo-v30-5g-xanh-thumb-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 7 Gen 3 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "12 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "512 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 50 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "50 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5000 mAh, Sạc 80 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sold": 4900
+    },
+    {
+      "id": "37",
+      "name": "Điện thoại vivo Y29 8GB/128GB - Hàng Chính Hãng",
+      "thuongHieu": "Vivo",
+      "price": 6190000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/334226/vivo-y29-8gb-128gb-100225-043030-300-600x600.jpg"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 685 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "128 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "6500 mAh, Sạc 44 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "Vivo Việt Nam"
+      },
+      "sale": 4,
+      "sold": 1300
+    },
+    {
+      "id": "38",
+      "name": "Điện thoại OPPO A5 Pro 8GB/256GB - Hàng Chính Hãng",
+      "thuongHieu": "OPPO",
+      "price": 6990000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/334323/oppo-a5-pro-blue-thumbn-600x600.jpg"
+        },
+        {
+          "id": 1,
+          "img": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/332936/oppo-reno13-f-5g-blue-1-638708201380084918-750x500.jpg"
+        },
+        {
+          "id": 2,
+          "img": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/332936/oppo-reno13-f-5g-blue-2-638708201388050819-750x500.jpg"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 6s Gen 1 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5800 mAh, Sạc 45 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "OPPO Việt Nam"
+      },
+      "sale": 4,
+      "sold": 184
+    },
+    {
+      "id": "39",
+      "name": "Điện thoại OPPO Reno13 F 5G 8GB/256GB - Hàng Chính Hãng",
+      "thuongHieu": "OPPO",
+      "price": 9990000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332936/oppo-reno13-f-5g-thumb-600x600.jpg"
+        },
+        {
+          "id": 1,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332934/Slider/oppo-reno13-5g638747946257189480.jpg"
+        },
+        {
+          "id": 2,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332934/Slider/oppo-reno13-5g638747946343917646.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 6 Gen 1 5G 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 8 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "32 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5800 mAh, Sạc 45 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "OPPO Việt Nam"
+      },
+      "sold": 40200
+    },
+    {
+      "id": "40",
+      "name": "Điện thoại OPPO Reno13 5G 12GB/256GB - Hàng Chính Hãng",
+      "price": 10000000,
+      "thuongHieu": "OPPO",
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332934/oppo-reno13-5g-thumb-600x600.jpg"
+        },
+        {
+          "id": 1,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332937/Slider/oppo-reno13-pro-5g638747971345001355.jpg"
+        },
+        {
+          "id": 2,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332937/Slider/oppo-reno13-pro-5g638747971350301394.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "MediaTek Dimensity 8350 5G 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "12 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 8 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "50 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5600 mAh, Sạc 80 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "OPPO Việt Nam"
+      },
+      "sold": 5600
+    },
+    {
+      "id": "41",
+      "name": "Điện thoại OPPO Reno13 Pro 5G 12GB/512GB - Hàng Chính Hãng",
+      "thuongHieu": "OPPO",
+      "price": 18990000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332937/oppo-reno13-pro-5g-thumb-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "MediaTek Dimensity 8350 5G 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "12 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "512 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 50 MP, 8 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "50 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5800 mAh, Sạc 80 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "OPPO Việt Nam"
+      },
+      "sold": 1800
+    },
+    {
+      "id": "42",
+      "name": "Điện thoại OPPO Reno13 F 8GB/256GB - Hàng Chính Hãng",
+      "thuongHieu": "OPPO",
+      "price": 8790000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/332935/oppo-reno13-f-thumb-600x600.jpg"
+        }
+      ],
+      "star": 5,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "MediaTek Helio G100 8 nhân"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "256 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 8 MP, 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "32 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5800 mAh, Sạc 45 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "OPPO Việt Nam"
+      },
+      "sold": 3200
+    },
+    {
+      "id": "43",
+      "name": "Điện thoại OPPO A60 8GB/128GB - Hàng Chính Hãng",
+      "thuongHieu": "OPPO",
+      "price": 5490000,
+      "img": [
+        {
+          "id": 0,
+          "img": "https://cdn.tgdd.vn/Products/Images/42/323543/oppo-a60-blue-thumb-600x600.jpg"
+        }
+      ],
+      "star": 4.9,
+      "info": [
+        {
+          "name": "Chip",
+          "value": "Snapdragon 680"
+        },
+        {
+          "name": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "name": "Dung lượng",
+          "value": "128 GB"
+        },
+        {
+          "name": "Camera sau",
+          "value": "Chính 50 MP & Phụ 2 MP"
+        },
+        {
+          "name": "Camera trước",
+          "value": "8 MP"
+        },
+        {
+          "name": "Pin",
+          "value": "5000 mAh, Sạc 45 W"
+        }
+      ],
+      "baohanh": {
+        "thoigian": "12 tháng",
+        "hinhthuc": "1 đổi 1",
+        "noibaohanh": "OPPO Việt Nam"
+      },
+      "sold": 205600
+    }
+  ]
+}
