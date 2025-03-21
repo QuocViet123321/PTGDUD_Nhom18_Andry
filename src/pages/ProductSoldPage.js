@@ -9,6 +9,7 @@ import formatCurrency from "../caculator/FormatCurrency";
 import LocationIcon from "../assets/camket/dinhvi.png";
 import CancelOrder from "../components/CancelOrder";
 import Footer from "../components/Footer";
+import axios from "axios";
 
 function ProductSoldPage() {
   const [product, setProduct] = useState([]);
@@ -17,17 +18,42 @@ function ProductSoldPage() {
   const account = JSON.parse(localStorage.getItem("isAccount")) || {};
 
   const handleCancelOrder = () => {
-    const productList = account.bell || [];
-    const updatedBell = productList.map((item) =>
-      item.id === product.id ? { ...item, cancel: !item.cancel } : item
-    );
-
     if (!product.cancel) {
+      const productList = account.bell || [];
+      const updatedBell = productList.map((item) =>
+        item.id === product.id ? { ...item, cancel: true } : item
+      );
+
       const updatedAccount = { ...account, bell: updatedBell };
       localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
 
       // Cập nhật lại state để render giao diện với trạng thái mới
-      setProduct({ ...product, cancel: !product.cancel });
+      setProduct({ ...product, cancel: true });
+
+      // Cập nhật lại sold cho từng sản phẩm trong đơn hàng đã hủy
+      const updateSoldPromises = product.info.map((item) =>
+        axios
+          .get(`http://localhost:3000/product/${item.product.id}`)
+          .then((response) => {
+            const updatedProduct = {
+              ...response.data,
+              sold: Math.max(
+                response.data.sold - (item.product.quantity || 1),
+                0
+              ),
+            };
+
+            return axios.put(
+              `http://localhost:3000/product/${item.product.id}`,
+              updatedProduct
+            );
+          })
+      );
+
+      // Đợi tất cả các cập nhật hoàn tất
+      Promise.all(updateSoldPromises)
+        .then(() => console.log("Cập nhật sold khi hủy đơn hàng thành công!"))
+        .catch((error) => console.error("Lỗi khi cập nhật sold:", error));
     }
   };
 

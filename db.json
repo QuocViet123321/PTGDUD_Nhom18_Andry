@@ -442,7 +442,7 @@
         "noibaohanh": "Iphone Việt Nam"
       },
       "sale": 15,
-      "sold": 2,
+      "sold": 3,
       "inventory": 30
     },
     {
@@ -625,6 +625,25 @@
       "name": "Điện thoại Samsung Galaxy S25+, Điện thoại AI, Tìm kiếm thông minh, Video camera đêm Nightography, Chip Snapdragon - Hàng Chính Hãng - Hàng Chính Hãng",
       "price": 23590000,
       "thuongHieu": "Samsung",
+      "detail": [
+        {
+          "name": "Dung lượng",
+          "value": [
+            {
+              "num": 128,
+              "priceplus": 0
+            },
+            {
+              "num": 256,
+              "priceplus": 1000000
+            },
+            {
+              "num": 512,
+              "priceplus": 2000000
+            }
+          ]
+        }
+      ],
       "img": [
         {
           "id": 0,
@@ -1054,7 +1073,7 @@
         "noibaohanh": "Samsung Việt Nam"
       },
       "sale": 15,
-      "sold": 13,
+      "sold": 14,
       "inventory": 30
     },
     {
@@ -1625,7 +1644,7 @@
         "noibaohanh": "Xiaomi Việt Nam"
       },
       "sale": 16,
-      "sold": 4,
+      "sold": 3,
       "inventory": 20
     },
     {
@@ -2270,7 +2289,7 @@
         "noibaohanh": "Realme Việt Nam"
       },
       "sale": 20,
-      "sold": 2,
+      "sold": 4,
       "inventory": 15
     },
     {

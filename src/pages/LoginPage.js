@@ -4,6 +4,7 @@ import { IoArrowBack } from "react-icons/io5";
 import ConfirmDialogOk from "../message/ConfirmDialogOk";
 import HomeImg from "../assets/camket/home.png";
 import Home2Img from "../assets/camket/home2.png";
+import { useProduct } from "../API/UseProvider";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ function LoginPage() {
   const [errors, setErrors] = useState({});
   const [showConfirm, setShowConfirm] = useState(false);
   const [message, setMessage] = useState("");
+  const { setAccount } = useProduct();
 
   const validateInput = () => {
     let errors = {};
@@ -80,6 +82,7 @@ function LoginPage() {
 
     if (user) {
       localStorage.setItem("isAccount", JSON.stringify(user));
+      setAccount(user);
       navigate("/");
     } else {
       setErrors({ phone: "Số điện thoại hoặc mật khẩu không đúng!" });

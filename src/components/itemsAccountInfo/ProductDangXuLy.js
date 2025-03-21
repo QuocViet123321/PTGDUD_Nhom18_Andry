@@ -1,7 +1,8 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import formatCurrency from "../../caculator/FormatCurrency";
 import { useNavigate } from "react-router-dom";
-// import formatCurrency from "../../caculator/FormatCurrency";
+
 function ProductDangXuLy({ account }) {
   const navigate = useNavigate();
   const [product, setProduct] = useState([]);
@@ -9,12 +10,46 @@ function ProductDangXuLy({ account }) {
   useEffect(() => {
     const productList = account.bell.filter((item) => !item.cancel);
     setProduct(productList);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [account]);
+
+  const handleCancelOrder = async (pro) => {
+    // Cập nhật trạng thái đơn hàng trong localStorage
+    const updatedBell = account.bell.map((item) =>
+      item.id === pro.id ? { ...item, cancel: true } : item
+    );
+
+    const updatedAccount = { ...account, bell: updatedBell };
+    localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
+
+    // Cập nhật lại state chỉ giữ các đơn chưa hủy
+    setProduct(updatedBell.filter((item) => !item.cancel));
+
+    // Cập nhật `sold` của sản phẩm trên API
+    try {
+      const updateSoldPromises = pro.info.map(async (item) => {
+        const res = await axios.get(
+          `http://localhost:3000/product/${item.product.id}`
+        );
+        const updatedProduct = {
+          ...res.data,
+          sold: Math.max(res.data.sold - (item.product.quantity || 1), 0),
+        };
+        await axios.put(
+          `http://localhost:3000/product/${item.product.id}`,
+          updatedProduct
+        );
+      });
+
+      await Promise.all(updateSoldPromises);
+      console.log("Cập nhật sold khi hủy đơn hàng thành công!");
+    } catch (error) {
+      console.error("Lỗi khi cập nhật sold:", error);
+    }
+  };
 
   return (
     <div>
-      {product.map((pro, index) => (
+      {product.map((pro) => (
         <div key={pro.id}>
           <div className="bg-white mt-4">
             {pro.info.map((item, index) => (
@@ -76,20 +111,7 @@ function ProductDangXuLy({ account }) {
               </div>
               <div
                 className="w-[150px] cursor-pointer text-[18px] rounded-lg text-center py-3 border-2 border-red-500 text-red-500"
-                onClick={() => {
-                  const updatedBell = account.bell.map((item) =>
-                    item.id === pro.id ? { ...item, cancel: true } : item
-                  );
-
-                  const updatedAccount = { ...account, bell: updatedBell };
-                  localStorage.setItem(
-                    "isAccount",
-                    JSON.stringify(updatedAccount)
-                  );
-
-                  // Cập nhật lại state nhưng chỉ giữ lại các đơn chưa bị hủy
-                  setProduct(updatedBell.filter((item) => !item.cancel));
-                }}
+                onClick={() => handleCancelOrder(pro)}
               >
                 Hủy
               </div>

@@ -1,21 +1,56 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import formatCurrency from "../../caculator/FormatCurrency";
 import { useNavigate } from "react-router-dom";
-// import formatCurrency from "../../caculator/FormatCurrency";
+
 function ProductAll({ account }) {
   const navigate = useNavigate();
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    const productList = account.bell;
+    const productList = account.bell || [];
     setProduct(productList);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [account]);
+
+  const handleCancelOrder = async (pro) => {
+    // Cập nhật trạng thái hủy trong danh sách đơn hàng
+    const updatedBell = product.map((item) =>
+      item.id === pro.id ? { ...item, cancel: true } : item
+    );
+
+    const updatedAccount = { ...account, bell: updatedBell };
+    localStorage.setItem("isAccount", JSON.stringify(updatedAccount));
+
+    // Cập nhật state để giao diện phản ánh trạng thái mới
+    setProduct(updatedBell);
+
+    // Giảm sold cho từng sản phẩm trong đơn hàng đã hủy
+    try {
+      const updateSoldPromises = pro.info.map(async (item) => {
+        const res = await axios.get(
+          `http://localhost:3000/product/${item.product.id}`
+        );
+        const updatedProduct = {
+          ...res.data,
+          sold: Math.max(res.data.sold - (item.product.quantity || 1), 0),
+        };
+        await axios.put(
+          `http://localhost:3000/product/${item.product.id}`,
+          updatedProduct
+        );
+      });
+
+      await Promise.all(updateSoldPromises);
+      console.log("Cập nhật sold khi hủy đơn hàng thành công!");
+    } catch (error) {
+      console.error("Lỗi khi cập nhật sold:", error);
+    }
+  };
 
   return (
     <div>
       {product &&
-        product.map((pro, index) => (
+        product.map((pro) => (
           <div key={pro.id}>
             <div className="bg-white mt-4">
               {pro.info.map((item, index) => (
@@ -84,20 +119,7 @@ function ProductAll({ account }) {
                 ) : (
                   <div
                     className="w-[150px] cursor-pointer text-[18px] rounded-lg text-center py-3 border-2 border-red-500 text-red-500"
-                    onClick={() => {
-                      const updatedBell = product.map((item) =>
-                        item.id === pro.id ? { ...item, cancel: true } : item
-                      );
-
-                      const updatedAccount = { ...account, bell: updatedBell };
-                      localStorage.setItem(
-                        "isAccount",
-                        JSON.stringify(updatedAccount)
-                      );
-
-                      // Cập nhật lại state để render giao diện với trạng thái mới
-                      setProduct(updatedBell);
-                    }}
+                    onClick={() => handleCancelOrder(pro)}
                   >
                     Hủy
                   </div>

@@ -7,6 +7,7 @@ export const UserProvider = ({ children }) => {
   const [product, setProduct] = useState([]);
   const [voucherList, setVoucherList] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [account, setAccount] = useState({});
 
   useEffect(() => {
     axios
@@ -25,6 +26,11 @@ export const UserProvider = ({ children }) => {
     const storedVouchers =
       JSON.parse(localStorage.getItem("voucherList")) || [];
     setVoucherList(storedVouchers);
+  }, []);
+
+  useEffect(() => {
+    const getAccount = JSON.parse(localStorage.getItem("isAccount")) || {};
+    setAccount(getAccount);
   }, []);
 
   // Chỉ thiết lập voucher nếu chưa có
@@ -72,7 +78,14 @@ export const UserProvider = ({ children }) => {
 
   return (
     <UserContext.Provider
-      value={{ product, loading, voucherList, setVoucherList }}
+      value={{
+        product,
+        loading,
+        voucherList,
+        setVoucherList,
+        account,
+        setAccount,
+      }}
     >
       {children}
     </UserContext.Provider>
