@@ -15,6 +15,7 @@ import { v4 as uuidv4 } from "uuid";
 import { IoArrowBack } from "react-icons/io5";
 import Footer from "../components/Footer.js";
 import axios from "axios";
+import { useProduct } from "../API/UseProvider.js";
 
 const hinhThucThanhToanList = [
   {
@@ -44,6 +45,7 @@ function PaymentCartPage() {
   const [payPro, setPayPro] = useState(1);
   const [mess, setMess] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
+  const { getProduct } = useProduct();
 
   useEffect(() => {
     const storedVouchers =
@@ -180,7 +182,7 @@ function PaymentCartPage() {
             )
           )
         );
-
+        getProduct(); // Cập nhật lại danh sách sản phẩm trong giỏ hàng
         navigate("/paymentSuccess", { replace: true });
       })
       .catch((error) => {

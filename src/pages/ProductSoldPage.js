@@ -134,7 +134,7 @@ function ProductSoldPage() {
                             </div>
                           </div>
                           <div className="w-[20%] pl-3">
-                            {product.sale ? (
+                            {product.product.sale ? (
                               <div>
                                 <h1 className="text-red-500 font-bold">
                                   {formatCurrency(
@@ -162,7 +162,7 @@ function ProductSoldPage() {
                             <h1 className="text-red-500 font-bold">
                               {formatCurrency(
                                 (product.product.price -
-                                  (product.sale
+                                  (product.product.sale
                                     ? product.product.price *
                                       (product.product.sale / 100)
                                     : 0)) *

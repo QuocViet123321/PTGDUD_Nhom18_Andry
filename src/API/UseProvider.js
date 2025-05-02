@@ -3,13 +3,13 @@ import axios from "axios";
 
 const UserContext = createContext();
 
-export const UserProvider = ({ children }) => {
+export const UserProvider = ({ children = null }) => {
   const [product, setProduct] = useState([]);
   const [voucherList, setVoucherList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [account, setAccount] = useState({});
 
-  useEffect(() => {
+  const getProduct = () => {
     axios
       .get("http://localhost:3000/product")
       .then((response) => {
@@ -20,6 +20,10 @@ export const UserProvider = ({ children }) => {
         console.error("Lỗi khi lấy dữ liệu:", error);
         setLoading(false);
       });
+  };
+
+  useEffect(() => {
+    getProduct();
   }, []);
 
   useEffect(() => {
@@ -85,6 +89,7 @@ export const UserProvider = ({ children }) => {
         setVoucherList,
         account,
         setAccount,
+        getProduct,
       }}
     >
       {children}

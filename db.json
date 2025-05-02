@@ -84,7 +84,7 @@
         "noibaohanh": "Samsung Việt Nam"
       },
       "sale": 15,
-      "sold": 13,
+      "sold": 15,
       "inventory": 30
     },
     {
@@ -354,7 +354,7 @@
         "noibaohanh": "Iphone Việt Nam"
       },
       "sale": 15,
-      "sold": 12,
+      "sold": 16,
       "inventory": 30
     },
     {
@@ -442,7 +442,7 @@
         "noibaohanh": "Iphone Việt Nam"
       },
       "sale": 15,
-      "sold": 3,
+      "sold": 9,
       "inventory": 30
     },
     {
@@ -530,7 +530,7 @@
         "noibaohanh": "Iphone Việt Nam"
       },
       "sale": 15,
-      "sold": 12,
+      "sold": 16,
       "inventory": 30
     },
     {
@@ -617,7 +617,7 @@
         "noibaohanh": "Iphone Việt Nam"
       },
       "sale": 15,
-      "sold": 12,
+      "sold": 13,
       "inventory": 30
     },
     {
@@ -810,7 +810,7 @@
         "noibaohanh": "Samsung Việt Nam"
       },
       "sale": 15,
-      "sold": 12,
+      "sold": 13,
       "inventory": 30
     },
     {
@@ -898,7 +898,7 @@
         "noibaohanh": "Samsung Việt Nam"
       },
       "sale": 15,
-      "sold": 12,
+      "sold": 11,
       "inventory": 30
     },
     {
@@ -1073,7 +1073,7 @@
         "noibaohanh": "Samsung Việt Nam"
       },
       "sale": 15,
-      "sold": 14,
+      "sold": 15,
       "inventory": 30
     },
     {
@@ -1160,7 +1160,7 @@
         "noibaohanh": "Samsung Việt Nam"
       },
       "sale": 15,
-      "sold": 12,
+      "sold": 13,
       "inventory": 30
     },
     {
@@ -1248,7 +1248,7 @@
         "noibaohanh": "Xiaomi Việt Nam"
       },
       "sale": 5,
-      "sold": 10,
+      "sold": 13,
       "inventory": 20
     },
     {
@@ -1569,7 +1569,7 @@
         "noibaohanh": "Xiaomi Việt Nam"
       },
       "sale": 12,
-      "sold": 20,
+      "sold": 21,
       "inventory": 40
     },
     {
@@ -1794,7 +1794,7 @@
         "noibaohanh": "Xiaomi Việt Nam"
       },
       "sale": 17,
-      "sold": 5,
+      "sold": 10,
       "inventory": 31
     },
     {
@@ -2126,7 +2126,7 @@
         "noibaohanh": "Realme Việt Nam"
       },
       "sale": 23,
-      "sold": 1,
+      "sold": 2,
       "inventory": 19
     },
     {
@@ -2214,7 +2214,7 @@
         "noibaohanh": "Realme Việt Nam"
       },
       "sale": 25,
-      "sold": 2,
+      "sold": 4,
       "inventory": 15
     },
     {
@@ -2289,7 +2289,7 @@
         "noibaohanh": "Realme Việt Nam"
       },
       "sale": 20,
-      "sold": 4,
+      "sold": 16,
       "inventory": 15
     },
     {
@@ -2344,7 +2344,8 @@
         "noibaohanh": "Vivo Việt Nam"
       },
       "sale": 0,
-      "sold": 24000
+      "sold": 24000,
+      "inventory": 24020
     },
     {
       "id": "31",
@@ -2398,7 +2399,8 @@
         "noibaohanh": "Vivo Việt Nam"
       },
       "sale": 8,
-      "sold": 50
+      "sold": 50,
+      "inventory": 60
     },
     {
       "id": "32",
@@ -2444,7 +2446,8 @@
         "noibaohanh": "Vivo Việt Nam"
       },
       "sale": 0,
-      "sold": 3600
+      "sold": 3600,
+      "inventory": 3660
     },
     {
       "id": "33",
@@ -2489,7 +2492,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "Vivo Việt Nam"
       },
-      "sold": 27000
+      "sold": 27000,
+      "inventory": 30000
     },
     {
       "id": "34",
@@ -2535,7 +2539,8 @@
         "noibaohanh": "Vivo Việt Nam"
       },
       "sale": 0,
-      "sold": 50300
+      "sold": 50300,
+      "inventory": 30000
     },
     {
       "id": "35",
@@ -2581,7 +2586,8 @@
         "noibaohanh": "Vivo Việt Nam"
       },
       "sale": 4,
-      "sold": 3800
+      "sold": 3800,
+      "inventory": 30000
     },
     {
       "id": "36",
@@ -2626,7 +2632,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "Vivo Việt Nam"
       },
-      "sold": 4900
+      "sold": 4900,
+      "inventory": 30000
     },
     {
       "id": "37",
@@ -2672,7 +2679,8 @@
         "noibaohanh": "Vivo Việt Nam"
       },
       "sale": 4,
-      "sold": 1300
+      "sold": 1300,
+      "inventory": 30000
     },
     {
       "id": "38",
@@ -2726,7 +2734,8 @@
         "noibaohanh": "OPPO Việt Nam"
       },
       "sale": 4,
-      "sold": 184
+      "sold": 184,
+      "inventory": 30000
     },
     {
       "id": "39",
@@ -2779,7 +2788,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "OPPO Việt Nam"
       },
-      "sold": 40200
+      "sold": 40200,
+      "inventory": 43000
     },
     {
       "id": "40",
@@ -2832,7 +2842,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "OPPO Việt Nam"
       },
-      "sold": 5600
+      "sold": 5600,
+      "inventory": 30000
     },
     {
       "id": "41",
@@ -2877,7 +2888,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "OPPO Việt Nam"
       },
-      "sold": 1800
+      "sold": 1800,
+      "inventory": 30000
     },
     {
       "id": "42",
@@ -2922,7 +2934,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "OPPO Việt Nam"
       },
-      "sold": 3200
+      "sold": 3200,
+      "inventory": 30000
     },
     {
       "id": "43",
@@ -2967,7 +2980,8 @@
         "hinhthuc": "1 đổi 1",
         "noibaohanh": "OPPO Việt Nam"
       },
-      "sold": 205600
+      "sold": 2600,
+      "inventory": 30000
     }
   ]
 }

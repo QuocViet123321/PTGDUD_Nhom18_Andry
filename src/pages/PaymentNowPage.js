@@ -14,6 +14,7 @@ import { v4 as uuidv4 } from "uuid";
 import { IoArrowBack } from "react-icons/io5";
 import Footer from "../components/Footer.js";
 import axios from "axios";
+import { useProduct, UserProvider } from "../API/UseProvider.js";
 
 const hinhThucThanhToanList = [
   {
@@ -42,6 +43,7 @@ function PaymentNowPage() {
   const [voucherList, setVoucherList] = useState([]);
   const [payPro, setPayPro] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
+  const { getProduct } = useProduct();
 
   useEffect(() => {
     const storedVouchers =
@@ -103,6 +105,7 @@ function PaymentNowPage() {
                     },
                   ],
                   priceShip: 37000,
+                  priceSaleShip: product.quantity > 1 ? 37000 : 0,
                   priceSaleVoucher: totalVoucherValue,
                   total:
                     product.price * product.quantity +
@@ -135,6 +138,7 @@ function PaymentNowPage() {
               )
             );
 
+            getProduct(); // Cập nhật lại danh sách sản phẩm
             navigate("/paymentSuccess", { replace: true });
           })
           .catch((error) => {

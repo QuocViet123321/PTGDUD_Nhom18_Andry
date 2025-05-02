@@ -8,8 +8,12 @@ function ProductDangXuLy({ account }) {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    const productList = account.bell.filter((item) => !item.cancel);
-    setProduct(productList);
+    if (account && account.bell) {
+      const productList = account.bell.filter((item) => !item.cancel);
+      setProduct(productList);
+    } else {
+      setProduct([]); // Gán mảng rỗng để tránh lỗi
+    }
   }, [account]);
 
   const handleCancelOrder = async (pro) => {

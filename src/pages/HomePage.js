@@ -13,6 +13,7 @@ import FilterProduct from "../components/FilterProduct";
 import Product from "../components/Product";
 import MiniFilter from "../components/filterDetail/MiniFilter";
 import ProductFlashSale from "../components/ProductFilter/ProductFlashSale";
+import ChatBox from "../components/chatbox/ChatBox";
 import Preview from "../components/Preview";
 import Footer from "../components/Footer";
 import { useProduct } from "../API/UseProvider";
@@ -57,79 +58,86 @@ function HomePage() {
   }
 
   return (
-    <div className="bg-[#f5f5fa] transform transition-all duration-500">
-      <div>
-        <Header />
-        <div className="flex gap-4 container">
-          {/* Danh mục */}
-          {/* <div className="w-1/5">
+    <div>
+      <div className="fixed bottom-7 right-4 z-50">
+        <ChatBox />
+      </div>
+      <div className="bg-[#f5f5fa] transform transition-all duration-500">
+        <div>
+          <Header />
+          <div className="flex gap-4 container">
+            {/* Danh mục */}
+            {/* <div className="w-1/5">
             <div className="sticky pt-3 top-0 z-10">
               <Category />
             </div>
           </div> */}
-          {/* Sản phẩm */}
-          <div className="mt-3 w-[90%] mx-auto min-h-[900px]">
-            <Banner />
-            {/* Bộ lọc */}
-            <FilterBar filter={filter} setFilter={setFilter} />
-            {/* + Thương hiệu */}
-            {filter === 2 && (
-              <ThuongHieuDetail
-                thuongHieu={thuongHieu}
-                setThuongHieu={setThuongHieu}
-              />
-            )}
-            {/* + Giá cả */}
-            {filter === 3 && <GiaCaFilter giaCa={giaCa} setGiaCa={setGiaCa} />}
-            {/* + Đánh giá */}
-            {filter === 6 && (
-              <DanhGiaFilter danhGia={danhGia} setDanhGia={setDanhGia} />
-            )}
+            {/* Sản phẩm */}
+            <div className="mt-3 w-[90%] mx-auto min-h-[900px]">
+              <Banner />
+              {/* Bộ lọc */}
+              <FilterBar filter={filter} setFilter={setFilter} />
+              {/* + Thương hiệu */}
+              {filter === 2 && (
+                <ThuongHieuDetail
+                  thuongHieu={thuongHieu}
+                  setThuongHieu={setThuongHieu}
+                />
+              )}
+              {/* + Giá cả */}
+              {filter === 3 && (
+                <GiaCaFilter giaCa={giaCa} setGiaCa={setGiaCa} />
+              )}
+              {/* + Đánh giá */}
+              {filter === 6 && (
+                <DanhGiaFilter danhGia={danhGia} setDanhGia={setDanhGia} />
+              )}
 
-            {/* + Bán chạy */}
-            {filter === 4 && (
-              <FilterProduct title={"Sản phẩm bán chạy"}>
-                {productList
-                  .sort((a, b) => b.sold - a.sold)
-                  .slice(0, 10)
-                  .map((product) => (
-                    <Product key={product.id} product={product} />
-                  ))}
-              </FilterProduct>
-            )}
-
-            <MiniFilter
-              thuongHieu={thuongHieu}
-              setThuongHieu={setThuongHieu}
-              danhGia={danhGia}
-              setDanhGia={setDanhGia}
-              giaCa={giaCa}
-              setGiaCa={setGiaCa}
-            />
-
-            {/* Sản phẩm được Filter */}
-            {(thuongHieu.length > 0 || danhGia.length > 0 || giaCa !== 0) &&
-              kq.length > 0 && (
-                <FilterProduct title={"Kết quả lọc"}>
-                  {kq.map((product) => (
-                    <Product key={product.id} product={product} />
-                  ))}
+              {/* + Bán chạy */}
+              {filter === 4 && (
+                <FilterProduct title={"Sản phẩm bán chạy"}>
+                  {productList
+                    .sort((a, b) => b.sold - a.sold)
+                    .slice(0, 10)
+                    .map((product) => (
+                      <Product key={product.id} product={product} />
+                    ))}
                 </FilterProduct>
               )}
 
-            {/* Sản phẩm sale */}
-            <ProductSale />
-            {/* Flash Sale */}
-            <ProductFlashSale />
-            {/* Lucky wheel */}
-            <LuckyWheelWelcome />
-            {/* Preview */}
-            <Preview />
-            {/* Sản phẩm gợi ý */}
-            <ProductSuggest />
+              <MiniFilter
+                thuongHieu={thuongHieu}
+                setThuongHieu={setThuongHieu}
+                danhGia={danhGia}
+                setDanhGia={setDanhGia}
+                giaCa={giaCa}
+                setGiaCa={setGiaCa}
+              />
+
+              {/* Sản phẩm được Filter */}
+              {(thuongHieu.length > 0 || danhGia.length > 0 || giaCa !== 0) &&
+                kq.length > 0 && (
+                  <FilterProduct title={"Kết quả lọc"}>
+                    {kq.map((product) => (
+                      <Product key={product.id} product={product} />
+                    ))}
+                  </FilterProduct>
+                )}
+
+              {/* Sản phẩm sale */}
+              <ProductSale />
+              {/* Flash Sale */}
+              <ProductFlashSale />
+              {/* Lucky wheel */}
+              <LuckyWheelWelcome />
+              {/* Preview */}
+              <Preview />
+              {/* Sản phẩm gợi ý */}
+              <ProductSuggest />
+            </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </div>
   );

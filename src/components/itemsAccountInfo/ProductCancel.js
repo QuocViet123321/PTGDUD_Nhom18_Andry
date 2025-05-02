@@ -7,10 +7,13 @@ function ProductCancel({ account }) {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    const productList = account.bell.filter((item) => item.cancel);
-    setProduct(productList);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    if (account && account.bell) {
+      const productList = account.bell.filter((item) => item.cancel);
+      setProduct(productList);
+    } else {
+      setProduct([]); // Gán mảng rỗng để tránh lỗi
+    }
+  }, [account]);
 
   return (
     <div>

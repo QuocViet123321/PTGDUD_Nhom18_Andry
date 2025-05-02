@@ -477,72 +477,80 @@ function ProductDetail({ sale }) {
                   </div>
                   {/* Mua */}
                   <div className="space-y-2">
-                    <div
-                      className="w-[90%] mx-auto p-3 bg-red-500 text-white text-center text-[20px] rounded-md cursor-pointer"
-                      onClick={() => {
-                        if (account) {
-                          localStorage.setItem(
-                            "ProductPayNow",
-                            JSON.stringify({
-                              ...product,
-                              quantity: num,
-                            })
-                          );
-                          navigate("/paymentNow");
-                        } else {
-                          navigate("/login");
-                        }
-                      }}
-                    >
-                      Mua ngay
-                    </div>
-                    <div
-                      className="w-[90%] mx-auto p-3 text-primary text-center border border-primary text-[20px] rounded-md cursor-pointer"
-                      onClick={() => {
-                        if (account) {
-                          account.cart = account.cart || [];
-
-                          // Kiểm tra sản phẩm đã tồn tại trong giỏ hàng chưa
-                          const existingProduct = account.cart.find(
-                            (item) => item.id === product.id
-                          );
-
-                          if (!existingProduct) {
-                            // Nếu chưa có, thêm mới với quantity = 1
-                            account.cart.push({ ...product, quantity: num });
+                    {product.sold < product.inventory ? (
+                      <div
+                        className="w-[90%] mx-auto p-3 bg-red-500 text-white text-center text-[20px] rounded-md cursor-pointer"
+                        onClick={() => {
+                          if (account) {
+                            localStorage.setItem(
+                              "ProductPayNow",
+                              JSON.stringify({
+                                ...product,
+                                quantity: num,
+                              })
+                            );
+                            navigate("/paymentNow");
+                          } else {
+                            navigate("/login");
                           }
+                        }}
+                      >
+                        Mua ngay
+                      </div>
+                    ) : (
+                      <div className="w-[90%] mx-auto p-3 bg-red-300 text-white text-center text-[20px] rounded-md cursor-default">
+                        Đã hết hàng
+                      </div>
+                    )}
+                    {product.sold < product.inventory && (
+                      <div
+                        className="w-[90%] mx-auto p-3 text-primary text-center border border-primary text-[20px] rounded-md cursor-pointer"
+                        onClick={() => {
+                          if (account) {
+                            account.cart = account.cart || [];
 
-                          // Cập nhật localStorage
-                          localStorage.setItem(
-                            "isAccount",
-                            JSON.stringify(account)
-                          );
+                            // Kiểm tra sản phẩm đã tồn tại trong giỏ hàng chưa
+                            const existingProduct = account.cart.find(
+                              (item) => item.id === product.id
+                            );
 
-                          // Cập nhật trong danh sách tài khoản
-                          const listAccount =
-                            JSON.parse(localStorage.getItem("account")) || [];
-                          const updatedListAccount = listAccount.map((acc) =>
-                            acc.username === account.username
-                              ? { ...acc, cart: account.cart }
-                              : acc
-                          );
-                          localStorage.setItem(
-                            "account",
-                            JSON.stringify(updatedListAccount)
-                          );
+                            if (!existingProduct) {
+                              // Nếu chưa có, thêm mới với quantity = 1
+                              account.cart.push({ ...product, quantity: num });
+                            }
 
-                          setIsCart(true);
-                        } else {
-                          navigate("/login");
-                        }
-                      }}
-                    >
-                      {isProductInCart(product.id)
-                        ? "Đã thêm vào giỏ hàng"
-                        : isCart
+                            // Cập nhật localStorage
+                            localStorage.setItem(
+                              "isAccount",
+                              JSON.stringify(account)
+                            );
+
+                            // Cập nhật trong danh sách tài khoản
+                            const listAccount =
+                              JSON.parse(localStorage.getItem("account")) || [];
+                            const updatedListAccount = listAccount.map((acc) =>
+                              acc.username === account.username
+                                ? { ...acc, cart: account.cart }
+                                : acc
+                            );
+                            localStorage.setItem(
+                              "account",
+                              JSON.stringify(updatedListAccount)
+                            );
+
+                            setIsCart(true);
+                          } else {
+                            navigate("/login");
+                          }
+                        }}
+                      >
+                        {isProductInCart(product.id)
                           ? "Đã thêm vào giỏ hàng"
-                          : "Thêm vào giỏ hàng"}
-                    </div>
+                          : isCart
+                            ? "Đã thêm vào giỏ hàng"
+                            : "Thêm vào giỏ hàng"}
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="mt-4">

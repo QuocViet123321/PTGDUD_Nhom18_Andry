@@ -55,7 +55,10 @@ function Product({ product }) {
             )}
           </div>
         </div>
-        <div className="p-1 border-t border-gray-200 ">
+        <div className="p-1 border-t border-gray-200 flex justify-between items-center">
+          {product.sold >= product.inventory && (
+            <span className="text-red-500">Hết hàng</span>
+          )}
           <span className="text-secondary float-right">Đã bán {sold}</span>
         </div>
       </div>
